@@ -13,14 +13,16 @@
         <!-- CSS and Style -->
         <link rel="stylesheet" href="homepage.css" />
         <!-- Custom JavaScript by Me -->
-        <script src="homepage.js"></script>
+        <script src="homepage.js" defer></script>
 
         <!-- Modernizer from Classs (just in case)-->
         <link rel="Modernizer" href="modernizr.custom.05819.js">
     </head>
 
     <body>
-
+        
+        <button type="button" id="theme-toggle">Dark mode</button>
+        
         <div id="name"></div>
 
         <section>
@@ -32,19 +34,52 @@
 
             <h3>My current interests are:</h3>
 
-            <ul>
-                <p>Digital Art</p>
-                <p>Castlevania | Both Games and Animated Show</p>
-                <p>Vampire Hunter D | Novel series and Manga</p>
-                <p>Trigun | 1999 Anime</p>
-                <p>Gothic Horror | Genre</p>
-                <p>Neon Colors and Lights</p>
+            <ul class="interest-list">
+                <li>Digital Art</li>
+                <li>Castlevania | Games and Animated Show</li>
+                <li>Vampire Hunter D | Novel series and Manga</li>
+                <li>Trigun | 1999 Anime</li>
+                <li>Gothic Horror | Genre</li>
+                <li>Neon Colors and Lights</li>
             </ul>
+
+            <h3>Current Skills and Technologies I Use</h3>
+
+            <ul id="skills"></ul>
+
         </section>
 
-        <section class="projects">
+        <div id="university-resources">
+            <h2>University Resources</h2>
+
+            <ul>
+                <li><a href="https://www.ecpi.edu/" target="_blank">ECPI University</a></li>
+                <li><a href="https://www.ecpi.edu/programs/software-development-bachelor-degree" target="_blank">Software Development Bachelor's Degree</a></li>
+                <li><a href="https://www.ecpi.edu/online" target="_blank">Online Learning</a></li>
+            </ul>
+        </div>
+
+        <div id="professional-projects">
             <h2>
-                Projects
+                Professional Projects
+            </h2>
+
+            <p class="description">
+                <a href="https://github.com/KeyApo/Website-Design-Project" target="_blank" rel="noopener noreferrer">NeonReflections Store Page</a>
+            </p>
+            <a href="https://github.com/KeyApo/Website-Design-Project" target="_blank" rel="noopener noreferrer">
+                <img src = "images/NeonReflections_Store.png" alt="Screenshot of the ECPI University Student Portal" class ="center-image">
+            </a>
+
+            <p class="description">
+                <a href="https://github.com/KeyApo/Web-Design-2.5-Performance-Assessment-Potion-Recipes" target="_blank" rel="noopener noreferrer">Potion Recipes Website</a>
+            </p>
+
+        </div>
+
+        <div id="personal-projects" class="personal projects">
+            <h2>
+                Personal Projects
             </h2>
 
             <p class="description">RPG Maker MV Parallax Map Creation</p>
@@ -63,7 +98,7 @@
             between a merchant and a demon butler"
             class ="center-image">
 
-        </section>
+        </div>
 
         <section class="contact">
             <h2>
@@ -72,7 +107,7 @@
 
             <p>Want to connect for future projects? Fill out the form and get in touch!</p>
 
-            <form>
+            <form id="contact-form">
 
                 <input type="text" id="emailAddress" placeholder="Email Address">
 
